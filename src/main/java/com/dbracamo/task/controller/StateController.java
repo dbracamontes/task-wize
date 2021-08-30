@@ -25,8 +25,6 @@ public class StateController<State> {
 	@GetMapping(value="/states", produces = MediaType.APPLICATION_JSON_VALUE)
 	public List<States> getAllStates() {
 		List<States> states = stateRep.findAll();
-		System.out.println("states");
-		System.out.println(states);
 		return states;
 	}
 	
